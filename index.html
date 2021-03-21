@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>スライドショー</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  </head>
+  <body>
+  <style type="text/css">
+    body {
+      margin: 40px 0;
+      padding: 0;
+      background: #808080;
+    }
+    
+    img {
+      display: block;
+      width:  600px;
+      height: 680px;
+    }
+    
+    .slider {
+      width: 600px;
+      margin: 0 auto;
+    }
+    
+  </style>
+  <div class="slider">
+    <div><img src="https://images.unsplash.com/photo-1615461329455-db4fab901cab?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alex-paganelli--8uDDiqY1Lk-unsplash.jpg"></div>
+    <div><img src="https://images.unsplash.com/photo-1531497778192-903f0a861cfe?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=georgia-de-lotz-gJfLuKneRc8-unsplash.jpg"></div>
+    <div><img src="https://images.unsplash.com/photo-1578772732210-2e4678f141fd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=giannis-skarlatos--GoPgexAuJc-unsplash.jpg"></div>
+    <div><img src="https://images.unsplash.com/photo-1571778231980-51354f255962?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=kelsey-curtis-EAI2NI5x8gY-unsplash.jpg"></div>
+    <div><img src="https://images.unsplash.com/photo-1439396812601-0b512add529f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=lili-popper-hq8s4zjhj3I-unsplash.jpg"></div>
+    <div><img src="https://images.unsplash.com/photo-1552156295-6c30fece2484?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=maxine-ficheux-L6Dpc1i6WrA-unsplash.jpg"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+    /*global $*/
+      $(document).on('ready', function(){
+        $('.slider').slick( {
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: false,
+          pauseOnFocus: false,
+          dots: true,
+          arrows: true
+        });
+      });
+  </script>
+  </body>
+</html>
